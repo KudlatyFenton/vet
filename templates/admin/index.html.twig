@@ -1,0 +1,123 @@
+{% extends '@EasyAdmin/page/content.html.twig' %}
+{% block main %}
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-4">
+				<a href="{{ea_url().setController('App\\Controller\\Admin\\AppointmentsCrudController').setAction('index')}}">
+					<div class="card text-center">
+						<div class="card-block">
+						<i class="fa-solid fa-calendar fa-10x"></i>
+							<h5 class="card-title">
+								Appointments
+							</h5>
+						</div>
+					</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+				<a href="{{ea_url().setController('App\\Controller\\Admin\\MedicationsCrudController').setAction('index')}}">
+					<div class="card text-center">
+						<div class="card-block ">
+						<i class="fa-solid fa-pills fa-10x"></i>
+							<h5 class="card-title">
+								Medications
+							</h5>
+						</div>
+					</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+				<a href="{{ea_url().setController('App\\Controller\\Admin\\VaccinesCrudController').setAction('index')}}">
+					<div class="card">
+						<div class="card-block  text-center">
+						<i class="fa-solid fa-prescription-bottle fa-10x"></i>
+							<h5 class="card-title">
+								Vaccines
+							</h5>
+						</div>
+					</div>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+				<a href="{{ea_url().setController('App\\Controller\\Admin\\DoctorsCrudController').setAction('index')}}">
+					<div class="card text-center">
+						<div class="card-block">
+						<i class="fa-solid fa-user-doctor fa-10x"></i>
+							<h5 class="card-title">
+								Doctors
+							</h5>
+						</div>
+					</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+				<a href="{{ea_url().setController('App\\Controller\\Admin\\AnimalsCrudController').setAction('index')}}">
+					<div class="card text-center">
+						<div class="card-block ">
+						<i class="fa-solid fa-dog fa-10x"></i>
+							<h5 class="card-title">
+								Animals
+							</h5>
+						</div>
+					</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+				<a href="{{ea_url().setController('App\\Controller\\Admin\\OwnersCrudController').setAction('index')}}">
+					<div class="card">
+						<div class="card-block  text-center">
+						<i class="fa-solid fa-person fa-10x"></i>
+							<h5 class="card-title">
+								Owners
+							</h5>
+						</div>
+					</div>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+				<a href="{{ea_url().setController('App\\Controller\\Admin\\ProceduresCrudController').setAction('index')}}">
+					<div class="card text-center">
+						<div class="card-block">
+						<i class="fa-solid fa-briefcase-medical fa-10x"></i>
+							<h5 class="card-title">
+								Procedures
+							</h5>
+						</div>
+					</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+				<a href="{{ea_url().setController('App\\Controller\\Admin\\VaccinationsCrudController').setAction('index')}}">
+					<div class="card text-center">
+						<div class="card-block ">
+						<i class="fa-solid fa-syringe fa-10x"></i>
+							<h5 class="card-title">
+								Vaccinations
+							</h5>
+						</div>
+					</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+				<a href="{{ea_url().setController('App\\Controller\\Admin\\PrescriptionsCrudController').setAction('index')}}">
+					<div class="card">
+						<div class="card-block  text-center">
+						<i class="fa-solid fa-prescription fa-10x"></i>
+							<h5 class="card-title">
+								Prescriptions
+							</h5>
+						</div>
+					</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

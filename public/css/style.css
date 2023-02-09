@@ -1,0 +1,8 @@
+.card{
+    padding: 3rem;
+    margin: 2em;
+}
+a:link, a:visited, a:hover, a:active{
+    color: inherit;
+    text-decoration: inherit;
+}
